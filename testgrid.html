@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Grid</title>
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        text-decoration: none;
+        list-style-type: none;
+      }
+      :root {
+        --clr-primary: #ddd;
+        --clr-dark: #333;
+        --clr-light: #fff;
+        --boxsha: 1px 1px 10px 1px rgba(0, 0, 0, 0.67);
+      }
+      html {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: var(--clr-dark);
+      }
+      body {
+        background-color: #ccc;
+        margin: 30px 50px;
+        line-height: 1.4;
+      }
+      .btn {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        padding: 0.6rem 1.3rem;
+        border: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+      .body-wrap {
+        display: grid;
+        gap: 20px;
+      }
+      /* Navigation ********/
+      .navTest ul {
+        display: grid;
+        gap: 20px;
+        padding: 0;
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .navTest a {
+        background-color: var(--clr-primary);
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+        color: var(--clr-dark);
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        box-sizing: var(--boxsha);
+        transition: 500ms;
+      }
+      .navTest a:hover {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+      }
+
+      /* Top Container *************/
+      .top-container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          "showcase top-box-a"
+          "showcase top-box-b";
+      }
+      .showcase {
+        grid-area: showcase;
+        text-transform: capitalize;
+        min-height: 400px;
+        background-image: url(images/pexels-kelly.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-shadow: var(--boxsha);
+      }
+
+      /* .showcase::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+      } */
+
+      .showcase h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+        color: var(--clr-light);
+      }
+      .showcase p {
+        font-size: 1.3rem;
+        margin-top: 0;
+        color: var(--clr-light);
+      }
+
+      /* Top box */
+      .top-box {
+        background-color: var(--clr-primary);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--boxsha);
+        padding: 1.5rem;
+      }
+      .top-box .price {
+        font-size: 2.5rem;
+      }
+      .top-box-a {
+        grid-area: top-box-a;
+      }
+      .top-box-b {
+        grid-area: top-box-b;
+      }
+
+      /* Boxes ****************/
+      .boxes {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .box {
+        background-color: var(--clr-primary);
+        text-align: center;
+        padding: 1.5rem 2rem;
+        box-shadow: var(--boxsha);
+      }
+
+      /* Info *********** */
+      .info {
+        background-color: var(--clr-primary);
+        box-shadow: var(--boxsha);
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+      }
+      /* Portfolio **********/
+      .portfolio {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .portfolio img {
+        width: 100%;
+        box-shadow: var(--boxsha);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem;
+      }
+      /* Media Queries ************/
+      @media (max-width: 700px) {
+        .top-container {
+          grid-template-areas:
+            "showcase showcase"
+            "top-box-a top-box-b";
+        }
+        .showcase h1 {
+          font-size: 2.5rem;
+        }
+        .navTest ul {
+          grid-template-columns: 1fr;
+        }
+        .info {
+          grid-template-columns: 1fr;
+        }
+        .info .btn {
+          display: block;
+          text-align: center;
+          margin: auto;
+        }
+      }
+      @media (max-width: 500px) {
+        .top-container {
+          grid-template-areas:
+            "showcase "
+            "top-box-a"
+            "top-box-b";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <nav class="navTest">
+        <ul class="linkTest">
+          <li><a href="index.html">home</a></li>
+          <li><a href="parallax.html">parallax</a></li>
+          <li><a href="testgrid.html">testgrid</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+        </ul>
+      </nav>
+      <!-- TOP CONTAINER -->
+      <section class="top-container">
+        <header class="showcase">
+          <h1>your web experience</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eaque.
+            Nulla, est corporis. Sed, consectetur voluptates? Consequatur
+            architecto ipsum odit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </header>
+        <div class="top-box top-box-a">
+          <h4>Membership</h4>
+          <p class="price">$199</p>
+          <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="top-box top-box-b">
+          <h4>Pro Membership</h4>
+          <p class="price">$299</p>
+          <a href="" class="btn">Buy Now</a>
+        </div>
+      </section>
+
+      <!-- Boxes Section -->
+      <section class="boxes">
+        <div class="box">
+          <i class="fas fa-chart-pie fa-4x"></i>
+          <h3>Analytics</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            commodi?
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe fa-4x"></i>
+          <h3>Not Analytics</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            commodi?
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-cog fa-4x"></i>
+          <h3>Geospace</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            commodi?
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-users fa-4x"></i>
+          <h3>Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            commodi?
+          </p>
+        </div>
+      </section>
+
+      <!-- Info Section -->
+      <section class="info">
+        <img src="images/pexels-pxA.jpg" alt="alligator" />
+        <div>
+          <h2>Your business on the web</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            illo veritatis laboriosam eveniet eius sunt maxime, corrupti,
+            reprehenderit debitis eaque dolorum provident consequatur, facilis
+            quia accusamus accusantium cumque repellendus dolor.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section class="portfolio">
+        <img src="https://source.unsplash.com/random/200x200" alt="" />
+        <img src="https://source.unsplash.com/random/201x200" alt="" />
+        <img src="https://source.unsplash.com/random/209x200" alt="" />
+        <img src="https://source.unsplash.com/random/202x200" alt="" />
+        <img src="https://source.unsplash.com/random/200x201" alt="" />
+        <img src="https://source.unsplash.com/random/200x202" alt="" />
+        <img src="https://source.unsplash.com/random/203x200" alt="" />
+        <img src="https://source.unsplash.com/random/204x200" alt="" />
+        <img src="https://source.unsplash.com/random/205x200" alt="" />
+        <img src="https://source.unsplash.com/random/206x200" alt="" />
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+        <p>DrewWeb &copy; 2021</p>
+      </footer>
+    </div>
+  </body>
+</html>

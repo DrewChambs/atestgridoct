@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* Main Styles 10/14/21 ***********/
+.wrapper {
+  width: 100vw;
+  overflow: auto;
+}
+/* End Main Styles ****************/
+
+/* HEADER STYLES **************** */
+.links a {
+  color: #fff;
+  padding: 0.5rem;
+  display: block;
+}
+.links a:hover {
+  background-color: grey;
+}
+.header {
+  background-color: rgb(209, 63, 9);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.logo {
+  display: inline-block;
+  font-size: 3.3rem;
+  margin-right: 20px;
+  color: #fff;
+}
+.log-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 2em;
+}
+.btnMenu {
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  margin-right: 30px;
+  color: #fff;
+}
+.btnTop {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+/* PADDING TO PUSH DOWN LOGO */
+nav {
+  padding: 0.5em 0;
+}
+/* LINKS FOR DROPDOWN AND JS *****************/
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: 500ms;
+}
+.show-links {
+  height: 10em;
+}
+/* END LINKS FOR DROPDOWN AND JS ************/
+
+/* END HEADER STYLES ***********************/
+
+/* MAIN BODY ************************ */
+.section1 {
+  overflow: auto;
+}
+.section2 {
+  overflow: auto;
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.split p {
+  padding: 1rem;
+}
+.bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+.bg-light {
+  background-color: rgb(141, 133, 133);
+}
+.inner-paragraph {
+  display: flex;
+}
+/* END MAIN BODY ************************ */
+
+/***************** PARALLAX STYLES *****************/
+.img1,
+.img2,
+.img3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.img1 {
+  background-image: url("images/pexels-egor.jpg");
+  height: 100vh;
+}
+.img2 {
+  background-image: url("images/pexels-kelly.jpg");
+  height: 50vh;
+}
+.img3 {
+  background-image: url("images/pexels-egor.jpg");
+  height: 50vh;
+}
+/* .paraText {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+} */
+.paraText {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.paraText h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.midrange p {
+  padding: 3rem;
+  line-height: 2;
+  width: 1000px;
+  margin: 0 auto;
+}
+.btnLearn {
+  display: inline-block;
+  width: 200px;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: orangered;
+  border-radius: 35px;
+  border: 5px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 500ms;
+  cursor: pointer;
+}
+.btnLearn:hover {
+  /* color: #000; */
+  border: 5px solid orangered;
+  background-color: #000;
+}
+/************* END PARALLAX STYLES *****************/
+
+/* TEST GRID STYLES ********************/
+
+/* END TEST GRID STYLES ********************/
+
+/* TUTORIAL GRID STYLES ******************/
+/* END TUTORIAL GRID STYLES **************/
+
+/* MEDIA QUERIES ******************************/
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: fixed;
+  }
+  nav {
+    display: flex;
+  }
+  .split {
+    flex-direction: row;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 2em;
+  }
+  .links a:hover {
+    background-color: transparent;
+    color: #000;
+  }
+  .btnMenu {
+    display: none;
+  }
+  .log-container {
+    margin-left: 2em;
+  }
+  .paraText h2 {
+    font-size: 6rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+}
