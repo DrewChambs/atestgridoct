@@ -54,7 +54,7 @@
         padding: 0;
         grid-template-columns: repeat(5, 1fr);
       }
-      .navTest a {
+      .navTest ul a {
         background-color: var(--clr-primary);
         display: block;
         padding: 0.8rem;
@@ -62,10 +62,10 @@
         color: var(--clr-dark);
         text-transform: uppercase;
         font-size: 1.1rem;
-        box-sizing: var(--boxsha);
+        box-shadow: var(--boxsha);
         transition: 500ms;
       }
-      .navTest a:hover {
+      .navTest ul a:hover {
         background-color: var(--clr-dark);
         color: var(--clr-light);
       }
@@ -165,6 +165,15 @@
         width: 100%;
         box-shadow: var(--boxsha);
       }
+      /* LOGO ******************/
+      .headline {
+        background-color: var(--clr-primary);
+        padding: 0.5rem;
+        box-shadow: var(--boxsha);
+        font-weight: normal;
+        text-align: center;
+        color: var(--clr-dark);
+      }
 
       /* Footer */
       footer {
@@ -209,18 +218,21 @@
   <body>
     <div class="body-wrap">
       <nav class="navTest">
+        <a href="index.html" class="headline-logo"
+          ><h1 class="headline">Travel Destinations</h1></a
+        >
         <ul class="linkTest">
           <li><a href="index.html">home</a></li>
           <li><a href="parallax.html">parallax</a></li>
-          <li><a href="testgrid.html">testgrid</a></li>
-          <li><a href="#">home</a></li>
-          <li><a href="#">home</a></li>
+          <li><a href="testgrid.html">travel grid</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Book Travel</a></li>
         </ul>
       </nav>
       <!-- TOP CONTAINER -->
       <section class="top-container">
         <header class="showcase">
-          <h1>your web experience</h1>
+          <h1>your travel destinations</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eaque.
             Nulla, est corporis. Sed, consectetur voluptates? Consequatur
@@ -229,13 +241,13 @@
           <a href="" class="btn">Read More</a>
         </header>
         <div class="top-box top-box-a">
-          <h4>Membership</h4>
-          <p class="price">$199</p>
+          <h4>Travel partnership</h4>
+          <p class="price">$45/year</p>
           <a href="" class="btn">Buy Now</a>
         </div>
         <div class="top-box top-box-b">
-          <h4>Pro Membership</h4>
-          <p class="price">$299</p>
+          <h4>Become a member</h4>
+          <p class="price">$3.99/month</p>
           <a href="" class="btn">Buy Now</a>
         </div>
       </section>
@@ -243,32 +255,32 @@
       <!-- Boxes Section -->
       <section class="boxes">
         <div class="box">
-          <i class="fas fa-chart-pie fa-4x"></i>
-          <h3>Analytics</h3>
+          <i class="fas fa-bed fa-4x"></i>
+          <h3>Hotels</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             commodi?
           </p>
         </div>
         <div class="box">
-          <i class="fas fa-globe fa-4x"></i>
-          <h3>Not Analytics</h3>
+          <i class="fas fa-house-user fa-4x"></i>
+          <h3>Villas</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             commodi?
           </p>
         </div>
         <div class="box">
-          <i class="fas fa-cog fa-4x"></i>
-          <h3>Geospace</h3>
+          <i class="fas fa-ship fa-4x"></i>
+          <h3>Sea Adventures</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             commodi?
           </p>
         </div>
         <div class="box">
-          <i class="fas fa-users fa-4x"></i>
-          <h3>Services</h3>
+          <i class="fas fa-route fa-4x"></i>
+          <h3>Nature Trails</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             commodi?
@@ -280,7 +292,7 @@
       <section class="info">
         <img src="images/pexels-pxA.jpg" alt="alligator" />
         <div>
-          <h2>Your business on the web</h2>
+          <h2>Your journey begins here</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             illo veritatis laboriosam eveniet eius sunt maxime, corrupti,
