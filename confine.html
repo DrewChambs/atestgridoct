@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confine Content</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        font-family: sans-serif;
+      }
+      html {
+        line-height: 2;
+      }
+      .sec1 {
+        overflow-x: hidden;
+      }
+      .main-container {
+        width: 1200px;
+        max-width: 100vw;
+        margin: 0 auto;
+        background-color: rgb(58, 15, 15);
+        color: #fff;
+        padding: 2rem;
+      }
+      .inner {
+        margin: 1rem;
+      }
+
+      /* ************* */
+      @media screen and (max-width: 700px) {
+        .main-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="main-container"> -->
+      <nav>
+        <div class="log-container">
+          <h1 class="logo">dax</h1>
+          <button class="btnMenu">menu</button>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="parallax.html">parallax</a></li>
+          <li><a href="testgrid.html">test grid</a></li>
+          <li><a href="confine.html">confine</a></li>
+          <li><a href="#">home</a></li>
+          <li></li>
+        </ul>
+      </nav>
+      <!-- </div> -->
+    </header>
+    <section class="sec1">
+      <div class="main-container">
+        <div class="inner">
+          <h1>test overflow</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo alias
+            nisi cupiditate vero odit veritatis dolores fugiat doloremque earum
+            quos animi numquam necessitatibus laudantium cum dicta distinctio,
+            mollitia maxime aliquam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+            quisquam laudantium sapiente, perspiciatis quas magni nesciunt,
+            magnam quibusdam, qui quam incidunt aut quo. Modi dicta tempore
+            delectus maiores, excepturi at inventore. Earum quae dicta,
+            doloremque iure quaerat vel vero? Voluptas neque inventore ex,
+            officia at ut voluptate enim nobis saepe.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo alias
+            nisi cupiditate vero odit veritatis dolores fugiat doloremque earum
+            quos animi numquam necessitatibus laudantium cum dicta distinctio,
+            mollitia maxime aliquam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+            quisquam laudantium sapiente, perspiciatis quas magni nesciunt,
+            magnam quibusdam, qui quam incidunt aut quo. Modi dicta tempore
+            delectus maiores, excepturi at inventore. Earum quae dicta,
+            doloremque iure quaerat vel vero? Voluptas neque inventore ex,
+            officia at ut voluptate enim nobis saepe.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
