@@ -3,64 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confine Content</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      :root {
-        font-family: sans-serif;
-      }
-      html {
-        line-height: 2;
-      }
-      .sec1 {
-        overflow-x: hidden;
-      }
-      .main-container {
-        width: 1200px;
-        max-width: 100vw;
-        margin: 0 auto;
-        background-color: rgb(58, 15, 15);
-        color: #fff;
-        padding: 2rem;
-      }
-      .inner {
-        margin: 1rem;
-      }
-
-      /* ************* */
-      @media screen and (max-width: 700px) {
-        .main-container {
-          width: 100%;
-        }
-      }
-    </style>
+    <title>Confine Page Content</title>
+    <!-- CSS FILE LINK  -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <!-- <div class="main-container"> -->
-      <nav>
-        <div class="log-container">
-          <h1 class="logo">dax</h1>
-          <button class="btnMenu">menu</button>
+    <!-- ***-->
+    <section class="hero-section">
+      <header class="header">
+        <div class="container">
+          <nav>
+            <div class="logo-container">
+              <h1 class="logo">dax</h1>
+              <button class="btnMenu">menu</button>
+            </div>
+            <ul class="links">
+              <li><a href="index.html">home</a></li>
+              <li><a href="parallax.html">parallax</a></li>
+              <li><a href="confine.html">confine</a></li>
+              <li><a href="testgrid.html">test grid</a></li>
+            </ul>
+          </nav>
         </div>
-        <ul class="links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="parallax.html">parallax</a></li>
-          <li><a href="testgrid.html">test grid</a></li>
-          <li><a href="confine.html">confine</a></li>
-          <li><a href="#">home</a></li>
-          <li></li>
-        </ul>
-      </nav>
-      <!-- </div> -->
-    </header>
-    <section class="sec1">
-      <div class="main-container">
+      </header>
+    </section>
+
+    <section class="section-confine">
+      <div class="container">
         <div class="inner">
           <h1>test overflow</h1>
           <p>
@@ -94,5 +63,7 @@
         </div>
       </div>
     </section>
+    <!--  JS FILE LINK -->
+    <script src="app.js"></script>
   </body>
 </html>
