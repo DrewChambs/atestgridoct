@@ -100,6 +100,7 @@ html {
 .bg-light {
   background-color: rgb(141, 133, 133);
   box-shadow: -4px 10px 19px -9px rgba(0, 0, 0, 0.75);
+  color: #fff;
 }
 /* END MAIN BODY *************************/
 /*
