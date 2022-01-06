@@ -233,4 +233,10 @@ html {
   .grid-title {
     font-size: 3rem;
   }
+  .inner {
+    padding: 5em;
+  }
+  .inner-paragraph {
+    padding: 2em 4em;
+  }
 }
