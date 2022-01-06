@@ -151,7 +151,7 @@ html {
 }
 
 .inner-paragraph {
-  padding: 2em 5em;
+  padding: 2em;
 }
 .btnLearn {
   display: inline-block;
@@ -187,11 +187,12 @@ html {
   color: #fff;
 }
 .inner {
-  padding: 4em;
+  padding: 2em;
 }
 .inner h1 {
   font-size: 3rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 /* END CONFINE STYLES *************/
