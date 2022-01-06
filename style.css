@@ -6,7 +6,9 @@
   text-decoration: none;
   list-style-type: none;
 }
-
+html {
+  line-height: 2;
+}
 /* Main Styles 10/14/21 ***********/
 /* End Main Styles ****************/
 
@@ -201,10 +203,6 @@
 }
 
 /* END CONFINE STYLES *************/
-.box {
-  height: 250px;
-  max-width: 300px;
-}
 .test-title {
   background: linear-gradient(
     90deg,
