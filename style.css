@@ -193,8 +193,8 @@ html {
   background-color: rgb(58, 15, 15);
   color: #fff;
 }
-.inner {
-  padding: 2em;
+.inner p {
+  padding: 0.5em;
 }
 .inner h1 {
   font-size: 3rem;
@@ -280,10 +280,11 @@ html {
   .grid-title {
     font-size: 3rem;
   }
-  .inner {
-    padding: 5em;
+
+  .inner p {
+    padding: 0.8em 5em;
   }
-  .inner-paragraph {
-    padding: 2em 4em;
+  .inner-paragraph p {
+    padding: 2em 6em;
   }
 }
